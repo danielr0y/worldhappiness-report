@@ -1,12 +1,13 @@
 # worldhappiness-report
 
-You can check out the project here: 
-https://worldhappiness-report.vercel.app/
-
+Check out the project at https://worldhappiness-report.vercel.app/
 
 ## Summary
-This React based SPA shows a subset of data from the World Happiness Report, an initiative of the United Nations, formatted for easier comprehension. In the report, as many as 157 countries are ranked according to an overall ‘happiness score’. These rankings and their respective scores are the essence of this application. 
-The application allow users to view, filter and compare rankings for a particular year or for a particular country or set of countries over time.
+This application is the front-end/client-side half of a two-part full-stack web application development project. The REST API/back-end application can be found at https://github.com/danielr0y/worldhappiness-api
+
+This project presents a subset of data from [The World Happiness Report](https://worldhappiness.report/), an initiative of the United Nations, formatted for easier comprehension. In the report, as many as 157 countries are ranked according to an overall ‘happiness score’.
+
+The application allows users to view, sort, filter and compare rankings data for a given year or for a particular country (or countries) over time. Registered users have the option to login and view further data depicting the perceived influence of several socioeconomic factors on the data.
 
 ## Technologies
 * JavaScript
@@ -24,9 +25,13 @@ The application allow users to view, filter and compare rankings for a particula
 The application is split into 4 main parts: a router, sub-routers, view components and reuseable UI components.
 
 App.js includes the main router component which imports sub-routers from /src/Routes/
+
 These sub-routers each lead to one of 3 primary view components: Form, Year or Country. 
-Year and Country are higher-order components which abstract the differences between the similar authenticated and unauthenticated lower-order views.
-These components use and reuse UI components and functions like YearSelector and hitRankings() from /src/helpers/
+
+Year and Country are higher-order components which abstract the differences between the similar authenticated and unauthenticated lower-order views. The lower-oder view components fetch data from my own [API project](https://github.com/danielr0y/worldhappiness-api) at https://worldhappiness-api.herokuapp.com/  
+
+These components use UI components like YearSelector and CountrySelector from /src/helpers/
+
 Custom React hooks like useSession(), useValidate() and useCountriesList() are used at all levels of the application.
 
 ## User guide  
