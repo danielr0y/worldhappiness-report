@@ -7,7 +7,7 @@ This application is the front-end/client-side half of a two-part full-stack web 
 
 This project presents a subset of data from [The World Happiness Report](https://worldhappiness.report/), an initiative of the United Nations, formatted for easier comprehension. In the report, as many as 157 countries are ranked according to an overall ‘happiness score’.
 
-The application allows users to view, sort, filter and compare rankings data for a given year or for a particular country (or countries) over time. Registered users have the option to login and view further data depicting the perceived influence of several socioeconomic factors on the data.
+The application allows users to view, sort, filter and compare rankings data for a given year or for a particular country (or countries) over time. Users have the option to register to view further data depicting the perceived influence of several socioeconomic factors on the scores reported by each country.
 
 ## Technologies
 * JavaScript
