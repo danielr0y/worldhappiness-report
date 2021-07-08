@@ -1,5 +1,4 @@
-# worldhappiness-report
-
+# Client-side single page JavaScript application with React
 Check out the project at https://worldhappiness-report.vercel.app/
 
 ## Summary
